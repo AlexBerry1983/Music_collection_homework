@@ -25,6 +25,13 @@ class Album
     @id = new_id
   end
 
+  # def find_artist
+  #   sql = "SELECT * FROM artists WHERE id = #{@artist_id}"
+  #   result_pg = SqlRunner.run(sql)
+  #   artist_hash = result_pg.first
+  #   artist_object_rb = Artist.new(artist_hash)
+  #   return artist_object_rb  
+  # end
 
 # CLASS METHODS
   def self.all
@@ -34,6 +41,8 @@ class Album
     end
     return albums
   end
+
+
 
   # def self.find_all_by(artist_id)
   #   sql = "SELECT * FROM albums WHERE artist_id = #{artist_id} "
